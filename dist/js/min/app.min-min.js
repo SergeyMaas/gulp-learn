@@ -1,0 +1,1 @@
+var Panel=function(){console.log("Panel init");var n=b=c=100;console.log(n)}.call(this),Main=function(){console.log("Main class")},main=new Main;

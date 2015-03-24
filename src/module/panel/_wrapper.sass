@@ -1,0 +1,52 @@
+@mixin rounded($radius: 5px)
+    border-radius: $radius
+    background-clip: padding-box
+
+
+.wrapper
+    width: 100%
+    position: relative
+    z-index: 10001
+    min-height: 100%
+    background-color: $bg_color
+    padding-top: 70px
+    margin-bottom: 600px
+    .content
+        width: 960px
+        margin: 10px auto
+        padding: 60px 10px
+        background-color: $default_block_bg
+        transition: background-color 0.3s ease
+        font-family: Helvetica,Arial,sans-serif
+        font-size: 135%
+        text-indent: 2em
+        font-weight: 300
+        line-height: 1.618
+        &.sponsor
+            background: linear-gradient(90deg, rgb(60, 165, 92) 10%, rgb(181, 172, 73) 90%)
+            color: white 
+            font-weight: 300
+            border-radius: 5px
+        &.first
+            background: linear-gradient(90deg, rgb(60, 165, 92) 10%, rgb(181, 172, 73) 90%)
+            color: white 
+            font-weight: 300
+            border-radius: 5px
+        &.two
+            background: linear-gradient(90deg, rgb(255, 81, 47) 10%, rgb(221, 36, 118) 90%)
+            color: white 
+            font-weight: 300
+            border-radius: 5px
+        strong
+            font-weight: 600
+        img
+            max-width: 300px
+            max-height: 300px
+            min-width: 300px
+            min-height: 300px
+            object-fit: cover
+            @include rounded(10px)
+        &:hover
+            background-color: darken($default_block_bg, 5%)
+        &:first-child
+            margin-top: 0

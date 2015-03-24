@@ -1,0 +1,15 @@
+#panel {
+  width: 100%;
+  height: 50px;
+}
+#panel .container {
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+#b_panel {
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+}
